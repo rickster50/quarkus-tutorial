@@ -46,7 +46,7 @@ You can run the test either in IDE or by running Maven:
 [#basics-run-tests]
 [source,bash,subs="+macros,+attributes"]
 ----
-./mvnw clean compile test
+mvn  clean compile test
 ----
 copyToClipboard::basics-run-tests[]
 #end::test[]

@@ -7,7 +7,7 @@ JVM mode::
 [source,bash,subs="+macros,+attributes"]
 ----
 cd pass:[$TUTORIAL_HOME]/work/{project-dir} && \
-./mvnw -DskipTests clean package
+mvn  -DskipTests clean package
 ----
 copyToClipboard::basics-build-quarkus-jvm-app[]
 
@@ -28,7 +28,7 @@ Native mode::
 [source,bash,subs="+macros,+attributes"]
 ----
 cd pass:[$TUTORIAL_HOME]/work/{project-dir} && \
-./mvnw -DskipTests clean package -Pnative
+mvn  -DskipTests clean package -Pnative
 ----
 copyToClipboard::basics-build-quarkus-native-app[]
 
@@ -56,7 +56,7 @@ Docker-Native mode::
 [source,bash,subs="+macros,+attributes"]
 ----
 cd pass:[$TUTORIAL_HOME]/work/{project-dir} && \
-./mvnw package -DskipTests -Pnative -Dquarkus.native.container-build=true
+mvn  package -DskipTests -Pnative -Dquarkus.native.container-build=true
 ----
 copyToClipboard::basics-build-quarkus-native-docker-app[]
 

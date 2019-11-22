@@ -5,6 +5,6 @@ If you are not in dev mode, run the following command to start Quarkus applicati
 [#{section-build-run}-build-run-dev]
 [source,bash,subs="+macros,+attributes"]
 ----
-./mvnw compile quarkus:dev 
+mvn  compile quarkus:dev 
 ----
 copyToClipboard::{section-build-run}-build-run-dev-mode[]

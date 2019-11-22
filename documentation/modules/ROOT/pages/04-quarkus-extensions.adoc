@@ -40,7 +40,7 @@ To list the available extensions, run the following command from your project di
 [source,bash,subs="+macros,+attributes"]
 ----
 cd {quarkus-project-name} && \
-./mvnw quarkus:list-extensions
+mvn  quarkus:list-extensions
 ----
 copyToClipboard::qext-mvn-list-extensions[]
 
@@ -104,7 +104,7 @@ To add Rest Client and JSON-B extensions (`{quarkus-rest-client-ext-name}`) to t
 [#qext-mvn-add-rest-client-extension]
 [source,bash,subs="+macros,+attributes"]
 ----
-./mvnw quarkus:add-extension -Dextension="{quarkus-rest-client-ext-name}"
+mvn  quarkus:add-extension -Dextension="{quarkus-rest-client-ext-name}"
 ----
 copyToClipboard::qext-mvn-add-rest-client-extension[]
 
@@ -289,7 +289,7 @@ To add Fault Tolernace extension (`{quarkus-fault-tolerance-ext-name}`) to the Q
 [#qext-mvn-add-fault-tolernace-extension]
 [source,bash,subs="+macros,+attributes"]
 ----
-./mvnw quarkus:add-extension -Dextension="{quarkus-fault-tolerance-ext-name}"
+mvn  quarkus:add-extension -Dextension="{quarkus-fault-tolerance-ext-name}"
 ----
 copyToClipboard::qext-mvn-add-fault-tolernace-extension[]
 
@@ -492,7 +492,7 @@ To add `{quarkus-health-ext-name}` to the Quarkus application, run the following
 [#qext-mvn-add-extension]
 [source,bash,subs="+macros,+attributes"]
 ----
-./mvnw quarkus:add-extension -Dextension="{quarkus-health-ext-name}"
+mvn  quarkus:add-extension -Dextension="{quarkus-health-ext-name}"
 ----
 copyToClipboard::qext-mvn-add-extension[]
 
@@ -686,6 +686,7 @@ include::ROOT:partial$k8s-build-deploy.adoc[tag=k8s-prep]
 include::ROOT:partial$k8s-build-deploy.adoc[tag=k8s-delete]
 endif::workshop[]
 
+ifndef::workshop[]
 [#qext-jwt]
 == Securing endpoints with JWT
 
@@ -704,7 +705,7 @@ To add JWT RBAC extension (`{quarkus-jwt-ext-name}`) to the Quarkus application,
 [#qext-mvn-add-jwt-extension]
 [source,bash,subs="+macros,+attributes"]
 ----
-./mvnw quarkus:add-extension -Dextension="{quarkus-jwt-ext-name}"
+mvn  quarkus:add-extension -Dextension="{quarkus-jwt-ext-name}"
 ----
 copyToClipboard::qext-mvn-add-jwt-extension[]
 
@@ -880,3 +881,4 @@ include::ROOT:partial$invoke-service.adoc[tag=callToken]
 And the output now is different: `Access forbidden: role not allowed`.
 
 This is the result because the provided token does not contain `Subscriber2` in the `groups` claim.
+endif::[]

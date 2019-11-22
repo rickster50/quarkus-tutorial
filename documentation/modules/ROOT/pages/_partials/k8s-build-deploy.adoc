@@ -9,7 +9,7 @@ If you have not deployed the application previously, you need to add Quarkus Kub
 [#qext-mvn-add-kubernetes-extension]
 [source,bash,subs="+macros,+attributes"]
 ----
-./mvnw quarkus:add-extension -Dextensions="quarkus-kubernetes"
+mvn  quarkus:add-extension -Dextensions="quarkus-kubernetes"
 ----
 copyToClipboard::qext-mvn-add-kubernetes-extension[]
 
@@ -32,7 +32,7 @@ Now you need to run Maven goal to generate Kubernetes resource.
 [#quarkusk8s-generate-kubernetes]
 [source,bash,subs="+macros,+attributes"]
 ----
-./mvnw package -DskipTests
+mvn  package -DskipTests
 ----
 copyToClipboard::quarkusk8s-generate-kubernetes[]
 

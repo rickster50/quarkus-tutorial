@@ -27,14 +27,14 @@ Create the `fruits-app` folder and navigate to the folder:
 ----
 mkdir -p $TUTORIAL_HOME/work && cd $TUTORIAL_HOME/work
 # set the Quarkus release environment variable 
-export QUARKUS_VERSION={page-component-version}
+export QUARKUS_VERSION='{page-component-version}'
 ----
 copyToClipboard::quarkusp-nav-to-work-folder[]
 
 [#quarkusp-mv-create-fruits-app]
 [source,bash,subs="+macros,+attributes"]
 ----
-mvn io.quarkus:quarkus-maven-plugin:pass:[$QUARKUS_VERSION]:create \
+mvn io.quarkus:quarkus-maven-plugin:pass:["$QUARKUS_VERSION"]:create \
   -DprojectGroupId="com.example" \
   -DprojectArtifactId="fruits-app" \
   -DprojectVersion="1.0-SNAPSHOT" \

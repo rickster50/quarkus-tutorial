@@ -10,7 +10,7 @@ JVM mode::
 [#{section-k8s}-build-quarkus-jvm-app]
 [source,bash,subs="+macros,+attributes"]
 ----
-./mvnw -DskipTests clean package
+mvn  -DskipTests clean package
 ----
 copyToClipboard::{section-k8s}-build-quarkus-jvm-app[]
 
@@ -30,7 +30,7 @@ Native mode::
 [#{section-k8s}-build-quarkus-native-app]
 [source,bash,subs="+macros,+attributes"]
 ----
-./mvnw -DskipTests clean package -Pnative -Dnative-image.docker-build=true <1>
+mvn  -DskipTests clean package -Pnative -Dnative-image.docker-build=true <1>
 ----
 copyToClipboard::{section-k8s}-build-quarkus-native-app[]
 <1> Using the `-Dnative-image.docker-build=true` is very important as need a linux native binary what will be containerized. 

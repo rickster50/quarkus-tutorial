@@ -30,7 +30,7 @@ NOTE: For the easier reference, we shall call the `fruits-app` project folder as
 [#qext-mvn-add-reactive-extensions]
 [source,bash,subs="+macros,+attributes"]
 ----
-./mvnw quarkus:add-extension -Dextension="quarkus-resteasy-jsonb, quarkus-rest-client, quarkus-smallrye-reactive-streams-operators"
+mvn  quarkus:add-extension -Dextension="quarkus-resteasy-jsonb, quarkus-rest-client, quarkus-smallrye-reactive-streams-operators"
 ----
 copyToClipboard::qext-mvn-add-reactive-extensions[]
 

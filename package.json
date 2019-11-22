@@ -2,7 +2,11 @@
   "name": "quarkus-tutorial-site",
   "description": "Quarkus Tutorial Documentation",
   "homepage": "https://redhat-developer-demos.github.io/quarkus-tutorial",
-  "author": {"email": "kamesh.sampath@hotmail.com","name": "Kamesh Sampath","url": "https://twitter.com/@kamesh_sampath"},
+  "author": {
+    "email": "kamesh.sampath@hotmail.com",
+    "name": "Kamesh Sampath",
+    "url": "https://twitter.com/@kamesh_sampath"
+  },
   "dependencies": {
     "@antora/cli": "2.0.0",
     "@antora/site-generator-default": "2.0.0",
@@ -12,7 +16,9 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/register": "^7.5.5",
     "browser-sync": "^2.26.7",
+    "firebase-tools": "^7.8.1",
     "fs-extra": "^8.1.0",
+    "global": "^4.4.0",
     "gulp": "^4.0.0",
     "yaml-js": "^0.2.3"
   },
@@ -31,5 +37,5 @@
     "presets": [
       "@babel/preset-env"
     ]
-  }  
+  }
 }
